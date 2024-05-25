@@ -3,9 +3,10 @@
 Hospital Management System using Bootstrap,, Php and Google Sheet
 
 ## Screenshot (Hardware)
-
+<div>
 <img height="400" alt="JPEG" src="/Project Screenshot/7.jpeg" />
 <img height="400" alt="JPEG" src="/Project Screenshot/6.jpeg" />
+</div>
 
 ## Screenshot (Software)
    <div><img height="400" alt="JPEG" src="/Project Screenshot/1.bmp" /><p>Login Page</p></div>
