@@ -4,15 +4,15 @@ Hospital Management System using Bootstrap,, Php and Google Sheet
 
 ## Screenshot (Hardware)
 
-<img height="200" alt="JPEG" src="/Project Screenshot/7.jpeg" />
-<img height="200" alt="JPEG" src="/Project Screenshot/6.jpeg" />
+<img height="400" alt="JPEG" src="/Project Screenshot/7.jpeg" />
+<img height="400" alt="JPEG" src="/Project Screenshot/6.jpeg" />
 
 ## Screenshot (Software)
-   <div><img height="200" alt="JPEG" src="/Project Screenshot/1.bmp" /><p>Login Page</p></div>
-   <div><img height="200" alt="JPEG" src="/Project Screenshot/2.bmp" /><p>Dashboard</p></div>
-   <div><img height="200" alt="JPEG" src="/Project Screenshot/3.bmp" /><p>Health Checkup Paramenters</p></div>
-   <div><img height="200" alt="JPEG" src="/Project Screenshot/4.bmp" /><p>Google Sheet Database</p></div>
-   <div><img height="200" alt="JPEG" src="/Project Screenshot/5.bmp" /><p>Cetificate</p></div>
+   <div><img height="400" alt="JPEG" src="/Project Screenshot/1.bmp" /><p>Login Page</p></div>
+   <div><img height="400" alt="JPEG" src="/Project Screenshot/2.bmp" /><p>Dashboard</p></div>
+   <div><img height="400" alt="JPEG" src="/Project Screenshot/3.bmp" /><p>Health Checkup Paramenters</p></div>
+   <div><img height="400" alt="JPEG" src="/Project Screenshot/4.bmp" /><p>Google Sheet Database</p></div>
+   <div><img height="400" alt="JPEG" src="/Project Screenshot/5.bmp" /><p>Cetificate</p></div>
 
 ## GETTING INTO THE PROJECT:
 
