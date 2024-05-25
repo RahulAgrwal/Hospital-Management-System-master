@@ -29,6 +29,9 @@ The ‘Home’ page consists of 3 modules:
 2. Doctor Module
 3. Admin Module
 
+[Download PDF](/Project%20Report.pdf)
+
+
 ## Need to work on:
 
 1. Ability to accept the appointment by the doctor to acknowledge the patient that their appointment has been approved.
