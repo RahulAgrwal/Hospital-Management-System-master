@@ -1,6 +1,6 @@
 # Hospital Management System
 
-Hospital Management System using Bootstrap,, Php and Google Sheet
+Hospital Management System using Bootstrap, Php and Google Sheet
 
 ## Screenshot (Hardware)
 <div style="display: flex; justify-content: space-between;">
@@ -15,7 +15,7 @@ Hospital Management System using Bootstrap,, Php and Google Sheet
    <div><img height="400" alt="JPEG" src="/Project Screenshot/4.bmp" /><p>Google Sheet Database</p></div>
    <div><img height="400" alt="JPEG" src="/Project Screenshot/5.bmp" /><p>Cetificate</p></div>
 
-## GETTING INTO THE PROJECT:[Project Report](/Project%20Report.pdf)
+## GETTING INTO THE PROJECT: [Project Report PDF](/Project%20Report.pdf)
 
 Hospital Management System in php . This system has a ‘Home’ page from where the patient, doctor & administrator can login into their accounts by toggling the tabs accordingly. 
 
