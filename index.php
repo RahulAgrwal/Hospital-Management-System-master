@@ -4,12 +4,13 @@
     <title>HMS</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style3.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <style>
@@ -48,7 +49,8 @@
 
 <!------ Include the above in your HEAD tag ---------->
 
-<body>
+<body style="background: -webkit-linear-gradient(left, #8A2387, #F27121);">
+    <!-- NavBar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
 
@@ -62,7 +64,12 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" style="margin-right: 40px;">
                         <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;">
-                            <h6>HOME</h6>
+                            <h6>LOGIN</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 40px;">
+                        <a class="nav-link js-scroll-trigger" href="patient_register.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;">
+                            <h6>REGISTER</h6>
                         </a>
                     </li>
 
@@ -81,128 +88,135 @@
             </div>
         </div>
     </nav>
+    <!-- NavBar End -->
+    <div class="area">
+        <ul class="circles">
 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
 
+        </ul>
+        <div class="container register" style="font-family: 'IBM Plex Sans', sans-serif; ">
+            <div class="row">
+                <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
+                    <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/> -->
+                    <h3>Wireless HealthCare System using IoMT with integration of Big Data</h3>
 
-    <div class="container register" style="font-family: 'IBM Plex Sans', sans-serif;">
-        <div class="row">
-            <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
-                <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/> -->
-                <h3>Wireless HealthCare System using IoMT with integration of Big Data</h3>
+                </div>
+                <!-- Tab Bar Start -->
+                <div class="col-md-9 " style="margin-top: 40px; left: 55px;background: white;border-radius: 50px; padding:0px">
+                    <div class="row justify-content-md-center m-0">
+                        <ul class="nav nav-tabs nav-justified m-3" id="myTab" role="tablist" style="width: 40%;">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="patient-tab" data-toggle="tab" href="#patient" role="tab" aria-controls="patient" aria-selected="true">Patient</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="doctor-tab" data-toggle="tab" href="#doctor" role="tab" aria-controls="doctor" aria-selected="false">Doctor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="admin-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row justify-content-md-center m-0">
+                        <div class="tab-content" id="myTabContent" style="padding:0px;">
 
-            </div>
-            <div class="col-md-9 register-right" style="margin-top: 40px;left: 80px;">
-                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%;">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3 class="register-heading">Register as Patient</h3>
-                        <form method="post" action="func2.php">
-                            <div class="row register-form">
+                            <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                                <div class="row m-5 text-center">
+                                    <h3 class="center">Login as Patient</h3>
+                                    <form method="post" action="func.php">
+                                        <div class="row register-form">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Email Name *" name="email" onkeydown="return alphaOnly(event);" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password *" name="password2" required />
+                                                </div>
 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name *" name="fname" onkeydown="return alphaOnly(event);" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" name="email" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password *" id="password" name="password" onkeyup='check();' required />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="maxl">
-                                            <label class="radio inline">
-                                                <input type="radio" name="gender" value="Male" checked>
-                                                <span> Male </span>
-                                            </label>
-                                            <label class="radio inline">
-                                                <input type="radio" name="gender" value="Female">
-                                                <span>Female </span>
-                                            </label>
+                                                <input type="submit" id="inputbtn" name="patsub" value="Login" class="btnRegister" />
+                                            </div>
                                         </div>
-                                        <a href="patient_login.php">Already have an account?</a>
-                                    </div>
-                                </div>
+                                    </form>
 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name *" name="lname" onkeydown="return alphaOnly(event);" required />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input type="tel" minlength="10" maxlength="10" name="contact" class="form-control" placeholder="Your Phone *" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password *" name="cpassword" onkeyup='check();' required /><span id='message'></span>
-                                    </div>
-                                    <input type="submit" class="btnRegister" name="patsub1" onclick="return checklen();" value="Register" />
                                 </div>
 
                             </div>
-                        </form>
-                    </div>
 
 
-                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h3 class="register-heading">Login as Doctor</h3>
-                        <form method="post" action="func1.php">
-                            <div class="row register-form">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="User Name *" name="username3" onkeydown="return alphaOnly(event);" required />
-                                    </div>
+                            <div class="tab-pane fade show " id="doctor" role="tabpanel" aria-labelledby="doctor-tab">
+                                <div class="row m-5 text-center">
+                                    <h3>Login as Doctor</h3>
+                                    <form method="post" action="func1.php">
+                                        <div class="row register-form">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="User Name *" name="username3" onkeydown="return alphaOnly(event);" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password *" name="password3" required />
+                                                </div>
+
+                                                <input type="submit" class="btnRegister" name="docsub1" value="Login" />
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password *" name="password3" required />
-                                    </div>
 
-                                    <input type="submit" class="btnRegister" name="docsub1" value="Login" />
-                                </div>
                             </div>
-                        </form>
-                    </div>
 
 
-                    <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="profile-tab">
-                        <h3 class="register-heading">Login as Admin</h3>
-                        <form method="post" action="func3.php">
-                            <div class="row register-form">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="User Name *" name="username1" onkeydown="return alphaOnly(event);" required />
+                            <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+                                <div class="row m-5 text-center">
+                                <h3>Login as Admin</h3>
+                                <form method="post" action="func3.php">
+                                    <div class="row register-form">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="User Name *" name="username1" onkeydown="return alphaOnly(event);" required />
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Password *" name="password2" required />
+                                            </div>
+
+                                            <input type="submit" class="btnRegister" name="adsub" value="Login" />
+                                        </div>
                                     </div>
-
-
-
+                                </form>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password *" name="password2" required />
-                                    </div>
-
-                                    <input type="submit" class="btnRegister" name="adsub" value="Login" />
-                                </div>
+                                
                             </div>
-                        </form>
+                        </div>
                     </div>
+                    <!-- Tab Bar Start -->
                 </div>
 
             </div>
+
         </div>
 
-    </div>
+
+
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

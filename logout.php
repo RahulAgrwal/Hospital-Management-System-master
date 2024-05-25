@@ -25,7 +25,7 @@ $options = ['valueInputOption' => 'USER_ENTERED'];
 for ($i = sizeof($rows) - 1; $i > 0; $i--) {
   if ($rows[$i][0] == $pid) {
     date_default_timezone_set('Asia/Kolkata');
-    $logouttime = date('d-m-y h:i:sa');
+    $logouttime = date('m/d/Y H:i:s');
     $body = new \Google_Service_Sheets_ValueRange(['values' => [[$logouttime, "Logged Out"]]]);
 
     $params = ['valueInputOption' => 'USER_ENTERED'];
@@ -45,7 +45,7 @@ session_destroy();
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="style3.css">
   <style>
     .btn-outline-light:hover {
       color: #0076d4;
@@ -55,9 +55,28 @@ session_destroy();
   </style>
 </head>
 
-<body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff);color:white;padding-top:100px;text-align:center;">
-  <h3>You have logged out.</h3><br><br>
-  <a href="patient_login.php" class="btn btn-outline-light">Back to Login Page</a>
+<body style="background: -webkit-linear-gradient(left, #8A2387, #F27121);color:white;padding-top:100px;text-align:center;">
+  <div class="area">
+    <ul class="circles">
+      <h3>You have logged out.</h3><br><br>
+      <a href="index.php" class="btn btn-outline-light">Back to Login Page</a>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+
+    </ul>
+
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

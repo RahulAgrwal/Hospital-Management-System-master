@@ -29,7 +29,7 @@ if (isset($_POST['patsub'])) {
   $gender = "";
   $contact = "";
   date_default_timezone_set('Asia/Kolkata');
-  $login_on = date('d-m-y h:i:sa');
+  $login_on = date('m/d/Y H:i:s');
   $email = $_POST['email'];
   $password = $_POST['password2'];
   //Google Client
@@ -58,6 +58,15 @@ if (isset($_POST['patsub'])) {
       
       header("Location:patient_portal.php");
 
+      $newRow = [$pid, $fname, $lname, $contact, $gender, $email, $password, $login_on,"","Active"];
+      $rows = [$newRow]; // you can append several rows at once
+      $valueRange = new \Google_Service_Sheets_ValueRange();
+      $valueRange->setValues($rows);
+      $range = 'LoginDetails'; // the service will detect the last row of this sheet
+      $options = ['valueInputOption' => 'USER_ENTERED'];
+      $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, $options);
+      $array=1;
+
       // $mail = new PHPMailer(true);
       // $mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
       // $mail->isSMTP();
@@ -67,7 +76,7 @@ if (isset($_POST['patsub'])) {
       // $mail->Port = 587;
   
       // $mail->Username = 'rahulagarwal1126@gmail.com'; // YOUR gmail email
-      // $mail->Password = 'jstdavrdgelmjlkk'; // YOUR gmail password
+      // $mail->Password = 'nyyradlrrlhiqbvq'; // YOUR gmail password
   
       // // Sender and recipient settings
       // $mail->setFrom('rahulagarwal1126@gmail.com', 'Rahul');
@@ -96,48 +105,18 @@ if (isset($_POST['patsub'])) {
       // $mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
   
       // $mail->send();
-  
-  
-  
-      $newRow = [$pid, $fname, $lname, $contact, $gender, $email, $password, $login_on,"","Active"];
-      $rows = [$newRow]; // you can append several rows at once
-      $valueRange = new \Google_Service_Sheets_ValueRange();
-      $valueRange->setValues($rows);
-      $range = 'LoginDetails'; // the service will detect the last row of this sheet
-      $options = ['valueInputOption' => 'USER_ENTERED'];
-      $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, $options);
-      $array=1;
+
       break;
     }
   }
 
   if ($array==0) {
     echo ("<script>alert('Invalid Username or Password. Try Again!');
-    window.location.href = 'patient_login.php';</script>");
+    window.location.href = 'index.php';</script>");
     
   } 
 }
-// if(isset($_POST['update_data']))
-// {
-// 	$contact=$_POST['contact'];
-// 	$status=$_POST['status'];
-// 	$query="update appointmenttb set payment='$status' where contact='$contact';";
-// 	$result=mysqli_query($con,$query);
-// 	if($result)
-// 		header("Location:updated.php");
-// }
 
-// if(isset($_POST['doc_sub']))
-// {
-// 	$doctor=$_POST['doctor'];
-//   $dpassword=$_POST['dpassword'];
-//   $demail=$_POST['demail'];
-//   $docFees=$_POST['docFees'];
-// 	$query="insert into doctb(username,password,email,docFees)values('$doctor','$dpassword','$demail','$docFees')";
-// 	$result=mysqli_query($con,$query);
-// 	if($result)
-// 		header("Location:adddoc.php");
-// }
 function display_admin_panel(){
 	echo '<!DOCTYPE html>
 <html lang="en">

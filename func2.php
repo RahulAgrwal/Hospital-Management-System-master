@@ -1,4 +1,5 @@
 <?php
+
 require 'vendor/autoload.php';
 session_start();
 use PHPMailer\PHPMailer\PHPMailer;
@@ -17,7 +18,7 @@ if (isset($_POST['patsub1'])) {
   $contact = $_POST['contact'];
   $password = $_POST['password'];
   $cpassword = $_POST['cpassword'];
-  $registered_on = date('d-m-y h:i:sa');
+  $registered_on = date('m/d/Y H:i:s');
   if ($password == $cpassword) {
     // configure the Google Client
     $client = new \Google_Client();
@@ -57,7 +58,7 @@ if (isset($_POST['patsub1'])) {
 
     echo "<script>alert('Registered successfully booked!! Mail Sent');</script>";
 
-    header("Location:patient_login.php");
+    header("Location:index.php");
   } else {
     header("Location:error1.php");
   }
@@ -72,7 +73,7 @@ if (isset($_POST['patsub1'])) {
     $mail->Port = 587;
 
     $mail->Username = 'rahulagarwal1126@gmail.com'; // YOUR gmail email
-    $mail->Password = 'jstdavrdgelmjlkk'; // YOUR gmail password
+    $mail->Password = 'nyyradlrrlhiqbvq'; // YOUR gmail password
 
     // Sender and recipient settings
     $mail->setFrom('rahulagarwal1126@gmail.com', 'Rahul');
@@ -108,19 +109,6 @@ if (isset($_POST['patsub1'])) {
 
 
 
-
-// function display_docs()
-// {
-// 	global $con;
-// 	$query="select * from doctb";
-// 	$result=mysqli_query($con,$query);
-// 	while($row=mysqli_fetch_array($result))
-// 	{
-// 		$name=$row['name'];
-// 		# echo'<option value="" disabled selected>Select Doctor</option>';
-// 		echo '<option value="'.$name.'">'.$name.'</option>';
-// 	}
-// }
 
 
 function display_admin_panel(){
@@ -280,4 +268,3 @@ function display_admin_panel(){
   </body>
 </html>';
 }
-?>
