@@ -17,14 +17,13 @@ Hospital Management System using Bootstrap,, Php and Google Sheet
 
 ## GETTING INTO THE PROJECT:[Project Report](/Project%20Report.pdf)
 
-Hospital Management System in php . This system has a ‘Home’ page from where the patient, doctor & administrator can login into their accounts by toggling the tabs accordingly. Fig 1.1 shows the ‘Home’ page of our project.
+Hospital Management System in php . This system has a ‘Home’ page from where the patient, doctor & administrator can login into their accounts by toggling the tabs accordingly. 
 
-'About Us' page (Fig 1.2) allows us to get some more information about the quality and the services of the hospital.
+'About Us' page allows us to get some more information about the quality and the services of the hospital.
 
-‘Contact’ page allows users to provide feedback or queries about the services of the hospital. Fig 1.3 shows the ‘Contact’ page.
+‘Contact’ page allows users to provide feedback or queries about the services of the hospital.
 
 The ‘Home’ page consists of 3 modules:
-
 1. Patient Module
 2. Doctor Module
 3. Admin Module
